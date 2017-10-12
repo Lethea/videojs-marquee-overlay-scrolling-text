@@ -32,10 +32,7 @@
     "watch:js-modules": "rollup -c scripts/modules.rollup.config.js -w",
     "watch:js-umd": "rollup -c scripts/umd.rollup.config.js -w",
     "watch:test": "rollup -c scripts/test.rollup.config.js -w",
-    "prepublish": "npm run build",
-    "prepush": "npm run test",
-    "precommit": "npm run docs:toc && git add README.md"
-  },
+   },
   "keywords": [
     "videojs",
     "videojs-plugin"

@@ -45,9 +45,13 @@ const onPlayerReady = (player, options) => {
   el.style.color=options.color;
   player.on('timeupdate', function () {
     if (player.userActive()) {
-      el.style.bottom = "30px";
-    }else {
-      el.style.bottom = 0;
+      if(options.position == "bottom"){
+        el.style.bottom = "30px";
+      }
+    } else {
+      if(options.position == "bottom") {
+        el.style.bottom = 0;
+      }
     }
   });
   $(function () {
@@ -60,6 +64,7 @@ const onPlayerReady = (player, options) => {
     });
   });
 };
+
 
 /**
  * A video.js plugin.
