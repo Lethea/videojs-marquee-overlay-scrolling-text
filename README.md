@@ -15,17 +15,22 @@ Jquery included
 ## Installation
 
 ```sh
+You can add to your project with
 npm install --save videojs-marquee-overlay
 Or
 you can download
 https://github.com/Lethea/videojs-marquee-overlay-scrolling-text or clone
-git clone https://github.com/Lethea/videojs-marquee-overlay-scrolling-text
+git clone git@github.com:Lethea/videojs-marquee-overlay-scrolling-text.git then
 npm install
 ```
 
 ## Usage
 
 To include videojs-marquee-overlay on your website or web application, use any of the following methods.
+
+videojs-marquee-overlay has 2 more examples with hls quaility selector + watermark addon.
+
+Both of examples works. You can check in examples directory
 
 ### `<script>` Tag
 
