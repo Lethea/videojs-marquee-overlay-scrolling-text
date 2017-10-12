@@ -1,6 +1,6 @@
 {
   "name": "@videojs-marquee-overlay/videojs-marquee-overlay",
-  "version": "0.0.0",
+  "version": "1.0.3",
   "description": "marquee plugin on video ",
   "main": "dist/videojs-marquee-overlay.cjs.js",
   "module": "dist/videojs-marquee-overlay.es.js",

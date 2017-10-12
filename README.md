@@ -16,6 +16,11 @@ Jquery included
 
 ```sh
 npm install --save videojs-marquee-overlay
+Or
+you can download
+https://github.com/Lethea/videojs-marquee-overlay-scrolling-text or clone
+git clone https://github.com/Lethea/videojs-marquee-overlay-scrolling-text
+npm install
 ```
 
 ## Usage
