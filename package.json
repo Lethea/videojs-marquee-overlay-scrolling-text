@@ -1,6 +1,6 @@
 {
   "name": "@videojs-marquee-overlay/videojs-marquee-overlay",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "marquee plugin on video ",
   "main": "dist/videojs-marquee-overlay.cjs.js",
   "module": "dist/videojs-marquee-overlay.es.js",
@@ -32,7 +32,10 @@
     "watch:js-modules": "rollup -c scripts/modules.rollup.config.js -w",
     "watch:js-umd": "rollup -c scripts/umd.rollup.config.js -w",
     "watch:test": "rollup -c scripts/test.rollup.config.js -w",
-   },
+    "prepublish": "npm run build",
+    "prepush": "npm run test",
+    "precommit": "npm run docs:toc && git add README.md"
+  },
   "keywords": [
     "videojs",
     "videojs-plugin"
@@ -61,7 +64,8 @@
     "jquery": "^3.2.1",
     "jquery.marquee": "^1.3.94",
     "video.js": "^5.19.2",
-    "videojs-contrib-hls": "^5.11.1"
+    "videojs-contrib-hls": "^5.11.1",
+    "videojs-quality-picker": "0.0.3"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
