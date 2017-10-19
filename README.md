@@ -63,6 +63,71 @@ Scroll Text ( Marquee Plugin )
 Watermark
 Playback Speed
 
+#### Samples
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-marquee-overlay Demo</title>
+  <link href="video-js.css" rel="stylesheet">
+  <link href="videojs.watermark.css" rel="stylesheet">
+
+</head>
+<body>
+<video id="videojs-marquee-overlay-player" class="video-js vjs-default-skin" controls width="848" height="480"  data-setup='{"playbackRates": [1, 1.5, 2] }'>
+  <source src="http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8" type="application/x-mpegurl">
+</video>
+
+<script src="video.js"></script>
+<script src="videojs-marquee-overlay.js"></script>
+<script src="videojs-contrib-hls.js"></script>
+<script src="jquery.js"></script>
+<script src="videojs5-hlsjs-source-handler.js"></script>
+<script src="jquery.marquee.js"></script>
+<script src="videojs.watermark.js"></script>
+<script>
+  (function (window, videojs) {
+    var player = window.player = videojs('videojs-marquee-overlay-player');
+    player.marqueeOverlay({
+      contentOfMarquee: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      position: "bottom",
+      direction: "left",
+      duration: 15000,
+      backgroundcolor: "red",
+      color: "#fefefe"
+    });
+    player.qualityPickerPlugin();
+    player.watermark({
+      file: 'Owned_Stamp.png',
+      xpos: 100,
+      ypos: 0,
+      clickable:true,
+      url:"http://emrekaratasoglu.com",
+      xrepeat: 0,
+      opacity: 0.5
+    });
+  }(window, window.videojs));
+
+</script>
+<style>
+  .vjs-emre-marquee {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index:9998;
+    position:absolute;
+    font-size: 20px;
+  }
+  .vjs-control{
+    z-index:9999;
+  }
+</style>
+
+</body>
+</html>
+
+
 ## License
 
 Apache-2.0. Copyright (c) Emre Karatasoglu (emre.karatasoglu@hotmail.com)
