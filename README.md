@@ -55,35 +55,13 @@ This is the simplest case. Get the script in whatever way you prefer and include
     });
 </script>
 ```
-
-### Browserify/CommonJS
-
-When using with Browserify, install videojs-marquee-overlay via npm and `require` the plugin as you would any other module.
-
-```js
-var videojs = require('video.js');
-
-// The actual plugin function is exported by this module, but it is also
-// attached to the `Player.prototype`; so, there is no need to assign it
-// to a variable.
-require('videojs-marquee-overlay');
-
-var player = videojs('my-video');
-
-player.marqueeOverlay();
-```
-
-### RequireJS/AMD
-
-When using with RequireJS (or another AMD library), get the script in whatever way you prefer and `require` the plugin as you normally would:
-
-```js
-require(['video.js', 'videojs-marquee-overlay'], function(videojs) {
-  var player = videojs('my-video');
-
-  player.marqueeOverlay();
-});
-```
+### No Need to build
+Working Example Included Built Scripts in Working_sample Directory
+With
+Quailty Selector
+Scroll Text ( Marquee Plugin )
+Watermark
+Playback Speed
 
 ## License
 
