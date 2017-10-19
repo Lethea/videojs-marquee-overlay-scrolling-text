@@ -63,7 +63,7 @@ Scroll Text ( Marquee Plugin )
 Watermark
 Playback Speed
 
-#### Samples
+### Samples
 
 <!doctype html>
 <html>
