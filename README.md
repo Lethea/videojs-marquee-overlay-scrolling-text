@@ -64,7 +64,7 @@ Watermark
 Playback Speed
 
 ### Samples
-
+```html
 <!doctype html>
 <html>
 <head>
@@ -126,6 +126,7 @@ Playback Speed
 
 </body>
 </html>
+```
 
 
 ## License
