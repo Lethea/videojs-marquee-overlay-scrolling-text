@@ -8,7 +8,7 @@ const defaults = {
   direction: "left",
   duration: 15000,
   backgroundcolor: "#dedede",
-  color: "#fefefe"
+  color: "#fefefe",
 };
 
 // Cross-compatibility for Video.js 5 and 6.
@@ -82,6 +82,9 @@ const marqueeOverlay = function (options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
+  marqueeOverlay.changeString=function(scrollingText){
+    $(".js-marquee").html(scrollingText)
+  }
 };
 
 // Register the plugin with video.js.
