@@ -63,6 +63,8 @@ Scroll Text ( Marquee Plugin )
 Watermark
 Playback Speed
 
+http://cdn.emrekaratasoglu.com/marquee_demo/
+
 ### Samples
 ```html
 <!doctype html>
