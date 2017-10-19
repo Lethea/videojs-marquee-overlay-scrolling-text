@@ -3,26 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>videojs-marquee-overlay Demo</title>
-  <link href="../node_modules/video.js/dist/video-js.css" rel="stylesheet">
-  <link href="../optional/videojs.watermark.css" rel="stylesheet">
+  <link href="video-js.css" rel="stylesheet">
+  <link href="videojs.watermark.css" rel="stylesheet">
 
 </head>
 <body>
 <video id="videojs-marquee-overlay-player" class="video-js vjs-default-skin" controls width="848" height="480"  data-setup='{"playbackRates": [1, 1.5, 2] }'>
   <source src="http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8" type="application/x-mpegurl">
 </video>
-<ul>
-  <li><a href="test/">Run unit tests in browser.</a></li>
-  <li><a href="docs/api/">Read generated docs.</a></li>
-</ul>
 
-<script src="../node_modules/video.js/dist/video.js"></script>
-<script src="../dist/videojs-marquee-overlay.js"></script>
-<script src="../node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
-<script src="../node_modules/jquery/dist/jquery.js"></script>
-<script src="../optional/videojs5-hlsjs-source-handler.js"></script>
-<script src="../node_modules/jquery.marquee/jquery.marquee.js"></script>
-<script src="../optional/videojs.watermark.js"></script>
+<script src="video.js"></script>
+<script src="videojs-marquee-overlay.js"></script>
+<script src="videojs-contrib-hls.js"></script>
+<script src="jquery.js"></script>
+<script src="videojs5-hlsjs-source-handler.js"></script>
+<script src="jquery.marquee.js"></script>
+<script src="videojs.watermark.js"></script>
 <script>
   (function (window, videojs) {
     var player = window.player = videojs('videojs-marquee-overlay-player');
@@ -36,7 +32,7 @@
     });
     player.qualityPickerPlugin();
     player.watermark({
-      file: '../optional/Owned_Stamp.png',
+      file: 'Owned_Stamp.png',
       xpos: 100,
       ypos: 0,
       clickable:true,
@@ -49,7 +45,7 @@
 </script>
 <style>
   .vjs-emre-marquee {
-    width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+    width: 100%;
     overflow: hidden;
     border: 1px solid #ccc;
     z-index:9998;
