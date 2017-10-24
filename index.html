@@ -30,11 +30,13 @@
       direction: "left",
       duration: 15000,
       backgroundcolor: "red",
-      color: "#fefefe"
+      color: "#fefefe",
     });
     player.qualityPickerPlugin();
   }(window, window.videojs));
-
+// IF YOU WANT TO CHANGE PLAYER STRING HERE IS AN EXAMPLE
+  setTimeout(function(){ player.marqueeOverlay.changeString("Player String Has Changed , You can Check This here")},5000);
+  //IF YOU WANT TO CHANGE PLAYER STRING HERE IS AN EXAMPLE
 </script>
 <style>
   .vjs-emre-marquee {
