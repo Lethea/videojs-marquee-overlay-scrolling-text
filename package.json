@@ -1,6 +1,6 @@
 {
-  "name": "@videojs-marquee-overlay/videojs-marquee-overlay",
-  "version": "1.0.4",
+  "name": "videojs-marquee-overlay",
+  "version": "2.0.1",
   "description": "marquee plugin on video ",
   "main": "dist/videojs-marquee-overlay.cjs.js",
   "module": "dist/videojs-marquee-overlay.es.js",
@@ -57,7 +57,10 @@
     "index.html",
     "scripts/",
     "src/",
-    "test/"
+    "test/",
+    "examples/",
+    "working_sample/",
+    "optional/"
   ],
   "dependencies": {
     "global": "^4.3.2",
@@ -101,5 +104,17 @@
     "sinon": "^2.2.0",
     "uglify-js": "^3.0.7",
     "videojs-standard": "^6.0.0"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lethea/videojs-marquee-overlay-scrolling-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lethea/videojs-marquee-overlay-scrolling-text/issues"
+  },
+  "homepage": "https://github.com/Lethea/videojs-marquee-overlay-scrolling-text#readme"
 }
